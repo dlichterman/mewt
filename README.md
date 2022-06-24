@@ -127,7 +127,9 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 **Or a Microbit**:
 
 * $15[![microbit](/images/mewtdemomicrobitlowrez.gif)](https://www.adafruit.com/product/3530)
+
 * You won't have to wire **ANYTHING** up, the buttons and LED displays are built-in.
+
 * Skip over to the [Microbit readme](https://github.com/dakota-mewt/mewt/blob/main/README_Microbit.md)
   
   </details>
@@ -151,13 +153,19 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   
   1. Click Start 
      ![clickstart](/images/screenshots/windows/clickstart.png)
+  
   2. Type in **_device manager_** to search and open 
      ![devicemanager](/images/screenshots/windows/devicemanager.png)
+  
   3. Scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
+  
   4. Now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+  
   5. The **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
+  
   6. You should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 
      ![ports](/images/screenshots/windows/ports.png)
+  
   7. Jot down the COMx serial port somewhere, we'll need to reference it later
      
      </details>
@@ -169,11 +177,15 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   
   1. Click **_Finder->Applications->Utilities->Terminal_** 
      ![terminal](/images/screenshots/mac/terminal.png)
+  
   2. In the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
      ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+  
   3. Now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+  
   4. In the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
      ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+  
   5. Jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
      
      </details>
@@ -185,9 +197,12 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   
   1. In a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
      ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+  
   2. Now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+  
   3. In the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
      ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+  
   4. Jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
      
      </details>
@@ -308,6 +323,7 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   </details>
 
 * Connect the button **NO** terminal to **D2** on your Arduino
+
 * Connect the button **C** terminal to **GND** on your Arduino
 
 _Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._
@@ -416,6 +432,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <summary>Click to expand</summary>
 
 * A Common (sometimes labeled **C** or **-**) - you will connect this to **GND** on your Arduino
+
 * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
   ![ledtestwiring-commoncathode](/images/ledtestwiring-commoncathode.png)
 
@@ -506,6 +523,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <summary>Click to expand</summary>
 
 * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V/VCC** on your Arduino
+
 * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
   ![ledtestwiring-commonannode](/images/ledtestwiring-commonanode.png)
 
@@ -733,8 +751,6 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 7. Make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
    ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
 8. If all goes well you should have the below reults
-   
-   
 * when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
 
 * If using the handshake version, you must first type into the console IdentifyMewtDevice, then when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
@@ -831,13 +847,19 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   1. Download [mewt.zip](/code/mac/mewt.zip)   
      _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
      ![keepanyway](/images/screenshots/windows/keepanyway.png)
+  
   2. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
+  
   3. Navigate to where you saved **mewt.zip** from ***Finder->Downloads***, right click on it and select _**Open With->Archive Utility**_
      ![extractall](/images/screenshots/mac/archiveutility.png)
+  
   4. Open ***Terminal*** from ***Finder->Applications->Utilities->Terminal***
+  
   5. In the Terminal console, navigate to where you unzipped **mewt.zip** _typically this is **cd $HOME/Downloads/mewt**_
+  
   6. Type in ***python mac_install_mewt.py***, wait for the prompt to plug in your Mewt
      ![macinstall](/images/screenshots/mac/macinstall.png)
+  
   7. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
      ![mewtready](/images/screenshots/mac/mewtready.png)
      
@@ -858,8 +880,11 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
      **pacmd set-source-mute X 1** _where X = your source number.  Start with 0 and work upwards_
   8. Once you have identified your microphone, **grep pacmd linux_mewt.py** to find the 2 instances where it's called and replace the microphone index.
   * Here are some links to get you started when you inevitably run into dependency/libraries/access issues
+  
   * [How to install python3-pip on ubuntu 20.04](https://stackoverflow.com/questions/62317653/how-to-install-python3-pip-on-ubuntu-20-04)
+  
   * [SerialException: could not open port /dev/ttyACM0](https://github.com/purduesigbots/pros-cli/issues/45)
+  
   * [Command to mute and unmute a microphone](https://askubuntu.com/questions/12100/command-to-mute-and-unmute-a-microphone)
     
     </details>
@@ -877,6 +902,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    <summary>Click to expand</summary>
   
   1. In _**File Explorer**_ navigate to _**C:\mewt**_
+  
   2. To run Mewt in Headless/No-User-Interface mode, run **start_mewt.bat**
      ![startmewt](/images/screenshots/windows/startmewt.png)
   * To exit from Headless/No-User-Interface mode, simply unplug your Mewt from the USB port
@@ -899,7 +925,9 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   3. Type in ***python mewt.py***
      ![mewtready](/images/screenshots/mac/mewtready.png)
   * To exit from Verbose mode, you can hit ***Ctrl+C***, or close the ***PowerShell*** window or simply unplug your Mewt from the USB port
+  
   * The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn the primary microphone in your system from Unmuted to Muted, and vice versa.  
+  
   * After you exit Mewt from the terminal, the light on the button will stay on until you restart Mewt or you unplug Mewt from the USB port
     
     </details>
@@ -913,6 +941,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   2. In the Terminal console, navigate to where you unzipped **mewt.zip**
   3. Type in ***python3 linux_mewt.py***
   * The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn the primary microphone in your system from Unmuted to Muted, and vice versa.
+  
   * After you exit Mewt from the terminal, the light on the button will stay on until you restart Mewt or you unplug Mewt from the USB port
     
     </details> 
@@ -1065,6 +1094,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   * Exits if port to Arduino no longer active *if Mewt is physically unplugged*
     
     </details>
+    </details>
 
 * **Mac**
   
@@ -1195,7 +1225,9 @@ Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
  <summary>Click to expand</summary>
 
 * Mewt's Windows implementation leverages the [AudioDeviceCmdlets](https://github.com/frgnca/AudioDeviceCmdlets) library, Copyright &copy; 2016-2018 Francois Gendron <fg@frgn.ca>
+
 * Mewt's Linux implementation leverages the [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/About/) library.  
+
 * Mewt's Windows Self-Extracting Executable file makes use of the [Shushing Face Icon](https://openmoji.org/library/#emoji=1F92B) from the [OpenMoji](https://openmoji.org/about/#acknowledgement) project.  
   
   </details>
