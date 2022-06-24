@@ -686,7 +686,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   <details>
    <summary>Click to expand</summary>
    
-   1. Download [mewt.exe](/code/windows/mewt.exe)   
+   1. Download [mewt.exe](/code/windows/Powershell Version/mewt.exe)   
    _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
    ![keepanyway](/images/screenshots/windows/keepanyway.png)
    1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
@@ -721,7 +721,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
      </summary>
      
    1. **mewt.exe** is a self-extracting version of **mewt.zip**.  
-   1. Download **[mewt.zip](/code/windows/mewt.zip)** to your computer
+   1. Download **[mewt.zip](/code/windows/Powershell Version/mewt.zip)** to your computer
    1. Navigate to where you saved **mewt.zip**, right click on it and select _**Extract All**_
    ![extractall](/images/screenshots/windows/extractall.png)
    1. In the next window, type in _**c:\mewt**_ then _**Extract**_
