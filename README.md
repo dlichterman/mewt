@@ -895,7 +895,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
 * **Windows**
    <details>
-    <summary>Click to expand</summary>
+    <summary>Click to expand Powershell Version</summary>
 
    Mewt Windows leverages the AudioDeviceCmdlets PowerShell library for its communications with system microphones.  See [Acknowledgments](#Acknowledgments)
 
@@ -927,6 +927,12 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
      * Waits for a fraction over half a second and mutes that unmewtable device again *beats me why this works, it just does*
      * Once we have discovered an unmewtable device, we will save it so that we don't waste time checking it every time.  Mewt will go directly to doing a 2nd mute attempt on these devices
      * Exits if port to Arduino no longer active *if Mewt is physically unplugged*
+
+   </details>
+   <details>
+    <summary>Click to expand C# Version</summary>
+
+    Mewt Windows C# lorem ipsum
 
    </details>
 
