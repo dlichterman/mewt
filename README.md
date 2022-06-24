@@ -661,6 +661,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
 1. If all goes well you should have the below reults
 * when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
+* If using the handshake version, you must first type into the console IdentifyMewtDevice, then when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
 
 ![testmewtbuttonpress](/images/mewt/testmewtbuttonpress.gif)
 
