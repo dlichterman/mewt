@@ -786,7 +786,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  
 * Windows
   <details>
-   <summary>Click to expand</summary>
+   <summary>Click to expand Powershell Version</summary>
    
    1. In _**File Explorer**_ navigate to _**C:\mewt**_
    1. To run Mewt in Headless/No-User-Interface mode, run **start_mewt.bat**
@@ -799,6 +799,12 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    * The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn the primary microphone in your system from Unmuted to Muted, and vice versa.
    
    </details> 
+
+   <details>
+   <summary>Click to expand C# Version</summary>
+
+  Lorem Ipsum placeholder
+   </details>
  
 * Mac
   <details>
