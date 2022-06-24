@@ -610,10 +610,15 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  </details>
  
  ### PC
-  _ | Common Cathode LED | Common Anode LED 
-  :------------: | :-------------: | :-------------: 
-  Momentary Button| [pc_momentary_common_cathode.ino](/code/arduino/pc_momentary_common_cathode.ino) | [pc_momentary_common_anode.ino](/code/arduino/pc_momentary_common_anode.ino) 
-  Latching Button  | [pc_latch_rgb_common_cathode.ino](/code/arduino/pc_latch_rgb_common_cathode.ino) | [pc_latch_rgb_common_anode.ino](/code/arduino/pc_latch_rgb_common_anode.ino) 
+  If using the powershell pc code, use the non-handshake. If using the C# application, you will need the handshake version. 
+
+  | _                          | Common Cathode LED                                                                                   | Common Anode LED                                                                                 |
+  |:--------------------------:|:----------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
+  | Momentary Button           | [pc_momentary_common_cathode.ino](/code/arduino/pc_momentary_common_cathode.ino)                     | [pc_momentary_common_anode.ino](/code/arduino/pc_momentary_common_anode.ino)                     |
+  | Latching Button            | [pc_latch_rgb_common_cathode.ino](/code/arduino/pc_latch_rgb_common_cathode.ino)                     | [pc_latch_rgb_common_anode.ino](/code/arduino/pc_latch_rgb_common_anode.ino)                     |
+  | Momentary Button Handshake | [pc_momentary_common_cathode_handshake.ino](/code/arduino/pc_momentary_common_cathode_handshake.ino) | [pc_momentary_common_anode_handshake.ino](/code/arduino/pc_momentary_common_anode_handshake.ino) |
+  | Latching Button Handshake  | [pc_latch_rgb_common_cathode_handshake.ino](/code/arduino/pc_latch_rgb_common_cathode_handshake.ino) | [pc_latch_rgb_common_anode_handshake.ino](/code/arduino/pc_latch_rgb_common_anode_handshake.ino) |
+
 
  ### Mac and Linux
   _ | Common Cathode LED | Common Anode LED 
