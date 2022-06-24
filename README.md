@@ -939,12 +939,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
 </details>
 
-</details>
-
 # How does the Mewt code work
-
-
- 
 
 * **Arduino**
   
