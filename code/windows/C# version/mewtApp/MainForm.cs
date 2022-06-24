@@ -17,6 +17,7 @@ namespace mewtApp
     {
         private SerialPort port;
         bool found = false;
+        bool globalMuteState = false;
 
         System.Timers.Timer tmrDisconnectCheck;
         System.Timers.Timer tmrVolume;
@@ -50,7 +51,8 @@ namespace mewtApp
             {
                 this.ShowInTaskbar = true;
                 this.Show();
-                
+                this.WindowState = FormWindowState.Normal;
+
             }
         }
 
@@ -63,6 +65,7 @@ namespace mewtApp
 
         private void SetMute(bool muteState)
         {
+            globalMuteState = muteState;
             MMDeviceEnumerator enumerator = new MMDeviceEnumerator();
             var q = enumerator.EnumerateAudioEndPoints(EDataFlow.eCapture, DEVICE_STATE.DEVICE_STATE_ACTIVE);
             foreach (var ep in q)
@@ -81,14 +84,14 @@ namespace mewtApp
                 port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
 
                 // Begin communications
-                port.Write("101");
+                port.WriteLine("101");
 
                 //Check current state to show correct color
                 MMDeviceEnumerator enumerator = new MMDeviceEnumerator();
                 var q = enumerator.GetDefaultAudioEndpoint(EDataFlow.eCapture, ERole.eCommunications);
                 bool muteState = q.AudioSessionManager2.Sessions.FirstOrDefault().SimpleAudioVolume.Mute;
                 //Invert the bool because 0 = muted
-                port.Write(muteState ? "0" : "1");
+                port.WriteLine(muteState ? "0" : "1");
 
                 //timer to check if we're still connected
                 tmrDisconnectCheck = new System.Timers.Timer();
@@ -117,11 +120,12 @@ namespace mewtApp
             {
                 if (vol > 0)
                 {
-                    port.Write(vol.ToString());
+                    port.WriteLine(vol.ToString());
                     ChangeLabel(vol.ToString(), lblVolVal);
                 }
                 else
                 {
+                    port.WriteLine(getMuteFromBool(globalMuteState));
                     ChangeLabel("0", lblVolVal);
                 }
             }
@@ -237,6 +241,19 @@ namespace mewtApp
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private string getMuteFromBool(bool mute)
+        {
+            if(mute)
+            {
+                return "0";
+            }
+            else
+            {
+                return "1";
+            }
+
         }
     }
 }
