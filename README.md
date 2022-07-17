@@ -1064,5 +1064,6 @@ Thomas Neis | [![1](https://media.discordapp.net/attachments/844326788167237643/
  
 * Mewt's Windows implementation leverages the [AudioDeviceCmdlets](https://github.com/frgnca/AudioDeviceCmdlets) library, Copyright &copy; 2016-2018 Francois Gendron <fg@frgn.ca>
 * Mewt's Linux implementation leverages the [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio/About/) library.  
-* Mewt's Windows Self-Extracting Executable file makes use of the [Shushing Face Icon](https://openmoji.org/library/#emoji=1F92B) from the [OpenMoji](https://openmoji.org/about/#acknowledgement) project.  
+* Mewt's Windows Self-Extracting Executable file and C# version installer makes use of the [Shushing Face Icon](https://openmoji.org/library/#emoji=1F92B) from the [OpenMoji](https://openmoji.org/about/#acknowledgement) project.  
+* Mewt's C# version makes use of the [CoreAudio library from morphx666](https://github.com/morphx666/CoreAudio)
 </details>
