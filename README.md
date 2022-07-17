@@ -746,7 +746,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    <summary>Click to expand C# Version</summary>
 
    You can either grab the source code and open it in Visual Studio 2022 to compile it, or download the installer [setup.exe](/code/windows/C%23%20version/setup.exe).
-   Running the setup will install the application and add a shortcut to the user's startup folder for the application to start automatically on login.
+   Running the setup will install the application and add a shortcut to the user's startup folder for the application to start automatically on login. Because this version uses a handshake, no other configuration is required.
    
    </details>
    
@@ -814,7 +814,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    <details>
    <summary>Click to expand C# Version</summary>
 
-  Lorem Ipsum placeholder
+   If you have used the installer, everything should be ready to go automatically.  You can open the application by clicking on the tray icon and see some debug info. Exit the application by clicking the big "Exit Application" button.
    </details>
  
 * Mac
