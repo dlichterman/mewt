@@ -715,7 +715,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    * To test out Mewt, go to [online-voice-recorder.com](https://online-voice-recorder.com/), and click on the red button to record.  You should see it react to any sounds your microphone picks up.  
    ![onlinevoicerecorder](/images/onlinevoicerecorder.gif)  
    ![mewtdemo](/images/mewtdemo.gif)
-   
+   </details> 
    <details>
      <summary>
   
@@ -740,7 +740,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    
    
    </details>  
-</details> 
+
    <details>
    <summary>Click to expand C# Version</summary>
 
