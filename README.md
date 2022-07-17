@@ -740,12 +740,12 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    
    
    </details>  
-
+</details> 
    <details>
    <summary>Click to expand C# Version</summary>
 
-   You can either grab the source code and open it in Visual Studio 2022 to compile it, or download the zipped binaries [mewtApp.zip](/code/windows/C%23%20version/mewtApp.zip).
-   The application can be set to run on startup of your computer with the task scheduler. You must run the application under a user account, not a system account.
+   You can either grab the source code and open it in Visual Studio 2022 to compile it, or download the installer [mewtApp.zip](/code/windows/C%23%20version/mewtApp.zip).
+   The application can be set to run on login of your computer multiple ways. You must run the application under a user account, not a system account.
    
    </details>
    
