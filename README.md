@@ -641,7 +641,9 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
 * A **Momentary Button** resets itself when you release the button.  Because of this lack of memory (or state), Arduino cannot rely on the status of the button to tell if Mewt should be enabled or not.  Instead, Arduino needs to keep track of the state inside the code with the use of a variable.
 
-* The **PC Mewt** streams back the microphone mute/unmute state and transmitted volume (if applicable).  Therefore, Mewt can rely on a continuous state signal to decide which color to display.
+* The **PC Mewt** streams back the microphone mute/unmute state and transmitted volume (if applicable).  Therefore, Mewt can rely on a continuous state signal to decide which color to display. 
+
+* The handshake version is meant to be used with the new c# application.
 
 * The **Mac / Linux Mewt** currently cannot stream back mute/unmute state and transmitted volume.  Mewt relies on knowledge of the mute/unmute state of the microphone at the time of button press to determine which color to display.  
 </details>
@@ -684,7 +686,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  
 * Windows
   <details>
-   <summary>Click to expand</summary>
+   <summary>Click to expand Powershell version</summary>
    
    1. Download [mewt.exe](/code/windows/Powershell%20Version/mewt.exe)   
    _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
@@ -739,6 +741,12 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    
    </details>  
 
+   <details>
+   <summary>Click to expand C# Version</summary>
+
+   Lorem Ipsum placeholder
+   </details>
+   
    
 * Mac
   <details>
