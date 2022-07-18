@@ -746,7 +746,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    <summary>Click to expand C# Version</summary>
 
    You can either grab the source code and open it in Visual Studio 2022 to compile it, or download the installer [mewtSetup.msi](/code/windows/C%23%20version/mewtSetup.msi).
-   Running the setup will install the application and add a shortcut to the user's startup folder for the application to start automatically on login. Because this version uses a handshake, no other configuration is required.
+   Running this setup will install the application and add a shortcut to the user's startup folder for the application to start automatically on login. Because this version uses a handshake to find the correct device, no other configuration is required.
    
    </details>
    
